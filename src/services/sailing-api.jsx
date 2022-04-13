@@ -16,10 +16,6 @@ export function deletePost(id){
     return response
 }
 
-export function updatePost(id, post){
-    const response = axios.update(url+id, post)
-    return response
-}
 
 export function createPost(add){
     const response = axios.post(url, add)

@@ -1,6 +1,6 @@
 import {React, useState, useEffect} from 'react'
 import {useNavigate, useParams} from 'react-router-dom'
-import {getPost, updatePost} from '../services/sailing-api'
+import {getPost, editPost} from '../services/sailing-api'
 
 function ViewPost() {
   const navigate= useNavigate()
@@ -11,14 +11,15 @@ function ViewPost() {
   useEffect(()=>{
     getPost(id)
     .then((res) => {setPost(res.data)
-      setReply(res.data.reply)})
-  },[post])
+                    setReply(res.data.reply)})
+  },[id])
   
   const addReply = event=>{
+    event.preventDefault()
     const rep = reply
     rep.push({name: event.target.name.value, message: event.target.message.value})
-    const newReply ={ title: reply.title, reply: post.body, reply: rep}
-    updatePost(id, newReply)
+    const newReply ={ name: reply.name, message: post.message, reply: rep}
+    editPost(id, newReply)
     navigate(`/${id}`)
   }
 
