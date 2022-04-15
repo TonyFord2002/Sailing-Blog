@@ -16,7 +16,8 @@ function EditPost() {
 const editOne = (event)=> {
         let edited = {
                     title: event.target.title.value,
-                    body: event.target.body.value
+                    body: event.target.body.value,
+                    image: event.target.image.value
         }
         editPost(id, edited)
         navigate(`/${id}`)
@@ -32,7 +33,8 @@ const deleteThisPost = ()=>{
         
         <form onSubmit={editOne}>
         Title: <input type='text' name='title' defaultValue={data.title}/><br/>
-        <input type='text' name='body' defaultValue={data.body} size='50'/>
+        Description:<input type='text' name='body' defaultValue={data.body} size='50'/><br/>
+        Image: <input type='text' name='image' defaultValue={data.image}/>
         <input type='submit' value='Edit Post'/>
     </form>
     <button style={{borderRadius:'7px' }} onClick={deleteThisPost}> Delete this post</button><br/>

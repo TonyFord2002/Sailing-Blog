@@ -2,6 +2,7 @@ import {React, useState, useEffect} from 'react'
 import {useNavigate, useParams} from 'react-router-dom'
 import {getPost, editPost} from '../services/sailing-api'
 
+
 function ViewPost() {
   const navigate= useNavigate()
   const {id} = useParams()
@@ -25,19 +26,18 @@ function ViewPost() {
 
   return (
     
-    <div id={'onepost'}>
+    <div id='onepost'>
     <h1>{post.title}</h1>
     <h2>{post.body}</h2><br/>
     <br/>
-    <div>
+    <div id='replys'>
         {
           reply.map((comment, i)=>{
             return(
-              <div key ={i}>
+              <div id='reply' key ={i}>
                 <h3>{comment.name}</h3>
                 <h4>{comment.message}</h4>
               </div>
-                
             )
           })
         }
@@ -45,8 +45,8 @@ function ViewPost() {
 
     <form onSubmit={addReply}>
       <input type='text' name='name' defaultValue={'Name'}/><br/>
-      <input type='text' name='message' defaultValue={'Comment'}/>
-      <input type= 'submit'/>
+      <input type='text' name='message' defaultValue={'Comment'}/><br/>
+      <input style={{borderRadius: '7px'}} type= 'submit'/>
     </form>
     
     <button style={{borderRadius:'7px' }} onClick={()=> {navigate(`/${id}/editRecord`)}}> Edit this post </button><br/>

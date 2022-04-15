@@ -1,5 +1,5 @@
 import axios from 'axios'
-const url = 'http://localhost:3001/sailing/'
+const url = 'https://tonysailingblog-api.herokuapp.com/sailing/'
 
 export function getPosts(){
     const response = axios.get(url)
@@ -15,7 +15,6 @@ export function deletePost(id){
     const response = axios.delete(url+id)
     return response
 }
-
 
 export function createPost(add){
     const response = axios.post(url, add)
