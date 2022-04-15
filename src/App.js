@@ -15,10 +15,10 @@ function App() {
         <Link to='/addPost'> Add A Post </Link>
       </nav>
       <Routes>
-        <Route path= 'https://github.com/TonyFord2002/Sailing-Blog.git/' element={<PostList/>}></Route>
-        <Route path= 'https://github.com/TonyFord2002/Sailing-Blog.git/addPost' element={<AddPost/>}></Route>
-        <Route path= 'https://github.com/TonyFord2002/Sailing-Blog.git/:id' element={<ViewPost/>}></Route>
-        <Route path= 'https://github.com/TonyFord2002/Sailing-Blog.git/:id/editRecord' element={<EditPost/>}></Route>
+        <Route path= 'github.com/TonyFord2002/Sailing-Blog.git/' element={<PostList/>}></Route>
+        <Route path= 'github.com/TonyFord2002/Sailing-Blog.git/addPost' element={<AddPost/>}></Route>
+        <Route path= 'github.com/TonyFord2002/Sailing-Blog.git/:id' element={<ViewPost/>}></Route>
+        <Route path= 'github.com/TonyFord2002/Sailing-Blog.git/:id/editRecord' element={<EditPost/>}></Route>
       </Routes>
     </Router>
   )
