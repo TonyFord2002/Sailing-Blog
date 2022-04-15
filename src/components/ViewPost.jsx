@@ -31,8 +31,8 @@ function ViewPost() {
     <h2>{post.body}</h2><br/>
     <br/>
     <div id='replys'>
-        {
-          reply.map((comment, i)=>{
+
+        {reply.map((comment, i)=>{
             return(
               <div id='reply' key ={i}>
                 <h3>{comment.name}</h3>
@@ -42,7 +42,7 @@ function ViewPost() {
           })
         }
     </div>
-
+    <h3>Add a comment</h3>
     <form onSubmit={addReply}>
       <input type='text' name='name' defaultValue={'Name'}/><br/>
       <input type='text' name='message' defaultValue={'Comment'}/><br/>
