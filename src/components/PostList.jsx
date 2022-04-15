@@ -18,7 +18,7 @@ function PostList() {
             return(
               <div id='post' key={i} >
                 <h2><a href = {`/${List._id}`}>{List.title}</a></h2>
-                <img src={List.image}/>
+                <a href = {`/${List._id}`}> <img src={List.image}/> </a>
               </div>
             )
           })}
