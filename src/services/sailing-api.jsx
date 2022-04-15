@@ -1,5 +1,5 @@
 import axios from 'axios'
-const url = 'http://tonysailingblog-api.herokuapp.com/sailing/'
+const url = 'https://tonysailingblog-api.herokuapp.com/sailing/'
 
 export function getPosts(){
     const response = axios.get(url)
