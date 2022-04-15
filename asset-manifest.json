@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Sailing-Blog/static/css/main.07b5039a.css",
+    "main.js": "/Sailing-Blog/static/js/main.92157e5e.js",
+    "index.html": "/Sailing-Blog/index.html",
+    "main.07b5039a.css.map": "/Sailing-Blog/static/css/main.07b5039a.css.map",
+    "main.92157e5e.js.map": "/Sailing-Blog/static/js/main.92157e5e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.07b5039a.css",
+    "static/js/main.92157e5e.js"
+  ]
+}
