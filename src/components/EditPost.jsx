@@ -11,7 +11,7 @@ function EditPost() {
     useEffect(()=>{
         getPost(id)
         .then((res) => setData(res.data))
-    },[])
+    },[id])
 
 const editOne = (event)=> {
         let edited = {
