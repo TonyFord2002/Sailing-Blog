@@ -1,14 +1,26 @@
-body{
+#light.App{
     background-color:cadetblue;
 }
-nav{
-    padding: 10px;
-    background-color:rgb(113, 179, 220)
-   
+
+#dark.App{
+    background-color: rgb(16, 16, 16);
 }
 
-nav a {
+#light nav{
+    padding: 10px;
+    background-color:rgb(113, 179, 220)
+}
+
+#dark nav{
+    padding: 10px;
+    background-color:rgba(113, 179, 220, 0.208)
+}
+
+#light nav a {
     color: white;
+}
+#dark nav a{
+    color: white
 }
 
 #container h1{
@@ -37,7 +49,7 @@ nav a {
 }
 
 #post img{
-    height: 100px
+    max-width: 60%
 }
 
 #onepost{
@@ -51,4 +63,18 @@ nav a {
     padding-right: 10px;
     border: double black 4px;
     border-radius: 20px;
+}
+
+#dark #switch{
+    display: grid;
+    align-items: right;
+    margin-left: 94%;
+    color: white;
+    text-align: center;
+}
+
+#light #switch{
+    display: grid;
+    align-items: right;
+    margin-left: 94%
 }
