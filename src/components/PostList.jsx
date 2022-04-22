@@ -10,6 +10,7 @@ function PostList() {
         .then((res) => setList(res.data))
     },[List])
 
+    
   return (
     <div id='container'>
       <h1 id='welcome'>Welcome to my sailing blog</h1>
@@ -24,6 +25,7 @@ function PostList() {
           })}
         </div>
       <h4><a href= {`/addPost`}>Add a new post</a></h4>
+      
     </div>
   )
 }

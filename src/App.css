@@ -1,8 +1,8 @@
-#light.App{
+#body #light{
     background-color:cadetblue;
 }
 
-#dark.App{
+#body #dark{
     background-color: rgb(16, 16, 16);
 }
 
@@ -30,7 +30,7 @@
     font-size: 60px;
 }
 
-#posts{
+#light #posts{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: auto;
@@ -39,8 +39,28 @@
     color: white;
 }
 
-#posts a{
+#dark #posts{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(28, 64, 68);
+    color: white;
+}
+#light #posts a{
     color: white
+}
+
+#posttitle{
+    color:honeydew
+}
+
+#postdec{
+    color:azure
+}
+
+#addcomm{
+    color:azure
 }
 
 #post{

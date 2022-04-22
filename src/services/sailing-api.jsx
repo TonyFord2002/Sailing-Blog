@@ -16,6 +16,8 @@ export function deletePost(id){
     return response
 }
 
+
+
 export function createPost(add){
     const response = axios.post(url, add)
     return response

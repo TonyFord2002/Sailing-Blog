@@ -27,8 +27,8 @@ function ViewPost() {
   return (
     
     <div id='onepost'>
-    <h1>{post.title}</h1>
-    <h2>{post.body}</h2><br/>
+    <h1 id='posttitle'>{post.title}</h1>
+    <h2 id='postdec'>{post.body}</h2><br/>
     <br/>
     <div id='replys'>
 
@@ -42,10 +42,10 @@ function ViewPost() {
           })
         }
     </div>
-    <h3>Add a comment</h3>
+    <h3 id='addcomm'>Add a comment</h3>
     <form onSubmit={addReply}>
       <input type='text' name='name' defaultValue={'Name'}/><br/>
-      <input type='text' name='message' defaultValue={'Comment'}/><br/>
+      <input type='text' name='message' defaultValue={'Comments'} style={{height:'100px', width:'300px'}}/><br/>
       <input style={{borderRadius: '7px'}} type= 'submit'/>
     </form>
     
