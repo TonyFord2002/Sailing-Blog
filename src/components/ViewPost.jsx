@@ -19,7 +19,8 @@ function ViewPost() {
     event.preventDefault()
     const rep = reply
     rep.push({name: event.target.name.value, message: event.target.message.value})
-    const newReply ={ name: reply.name, message: post.message, reply: rep}
+
+  const newReply ={ name: reply.name, message: post.message, reply: rep}
     editPost(id, newReply)
     navigate(`/${id}`)
   }
